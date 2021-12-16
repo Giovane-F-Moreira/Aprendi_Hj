@@ -20,7 +20,17 @@ O Git utiliza **Hash** SHA1 para identificar qualquer mudança feita em um arqui
 	$ git config --global user.email "email@gmail.com"
 	$ git config --global user.name nome
 
-	// Inicia o repositorio locla git 
+	//Mostra as configurações do Git
+	$ git config --list	
+	
+	//Faz o link de um repositorio local par aum remoto
+	$ git remote add origin https://github.com/usuario/repositorio.git
+	$ git push -u origin main
+	
+	//Exibe lista de repositorios
+	$ git remote -v
+	
+	//Inicia o repositorio locla git 
 	$ git init  
 
 	//Verifica o status do repositorio
@@ -33,7 +43,11 @@ O Git utiliza **Hash** SHA1 para identificar qualquer mudança feita em um arqui
 	$ git commit -m "mensagem"
 
 	//Envia o commit 
-	$ git push	
+	$ git push
+	
+	//Baixa as ultimas alterações naquele repositorio 
+	$ git pull origin main
+	
 ```
 
 
@@ -45,6 +59,7 @@ O Git utiliza **Hash** SHA1 para identificar qualquer mudança feita em um arqui
   1. **Unmodified** - Arquivos que não foram alterados - verifica-se pelo SHA1
   2. **Modified** - Arquivos modificados
   3. **Stage** - Arquivos que possuem um 'estado', esse estado é o que antecede o commit, arquivos modificados vão pro **STAGE** apos serem adicionados com comando `$ git add`, estando no **STAGE**, ele podem ir pro **COMMIT**
+
 
 
 Caso eliminemos arquivos **Unmodified**, eles irão para os arquivos **Untracked**
