@@ -2,9 +2,13 @@
 
 ------
 
-​	O scrum é um metodologia agil
+O Scrum é uma estrutura que ajuda as equipes a trabalharem juntas. Semelhante a uma equipe de rugby (de onde vem o nome) treinando para o grande jogo, o Scrum estimula as equipes a aprenderem com as experiências, a se organizarem enquanto resolvem um problema e a refletirem sobre os êxitos e fracassos para melhorarem sempre.
 
-​	pilares do scrum
+### Pilares do scrum
+
+1. Transparência. 
+2. Inspeção. 
+3. Adaptação
 
 ## Responsaveis:
 
@@ -43,7 +47,31 @@
 
 ​	Toda vez que o produto é criado ou modificado, geramos uma release, que é uma versão daquele produto
 
+## Estória, Tarefas e Epicos
 
+​	Estoria = é um conjunto de tarefas
+​	Epicos = é um conjunto de estorias
+​	Tarefa = é um conjunto de atividades que os Devs fazem para entregar a estória
 
+​								/	Épico     \
 
+​							/		Estória      \
 
+​						/			Tarefa          \
+
+​	Imagine um projeto que o objetivo é construir uma bicicleta
+​	Quando todos os epicos estiverem concluidos, o projeto estará pronto
+​	O projeto bibleta e um conjuntos dos **epicos**( quadro, garfo, selim, rodas, freio e tração)
+​		
+​	O **epico** é um objetivo macro a ser cumprido (guidão, amortecedores, garfo)
+​	OBS: O guidão é uma estoria do **epico** gargo, assim como pedal é uma estoria do sistema de tração
+
+Para realizar a **estoria** garfo, temos que realizar as **tarefas** (montar guidão, montar garfo, montar garfo no quadro, montar roda no garfo .... )
+
+## Critério de aceite
+
+​	É uma lista de critérios para que a estória atenda aos requisitos do cliente
+
+## Planning Poker
+
+​	É uma atividade de mesuração do esforço e complexidade das terfas ou estórias
