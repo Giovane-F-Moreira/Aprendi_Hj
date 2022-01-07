@@ -19,30 +19,30 @@
     </head>
     <body> 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <a class="navbar-brand" href="index.html">
-                <img src="https://cdn.pixabay.com/photo/2015/06/11/00/55/book-805405_960_720.png" width="30px">&nbsp
-                Home
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Aprendendo ++
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="git.html">Git</a>
-                            <a class="dropdown-item" href="js.html">JS</a>
-                            <a class="dropdown-item" href="scrum.html">Scrum</a>
-                        </div>
-                    </li>
-                </ul>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">
+                  <img src="https://cdn.pixabay.com/photo/2015/06/11/00/55/book-805405_960_720.png" width="30px">&nbsp
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Aprendendo ++</a>
+                            <div class="dropdown-menu">
+                                <a href="git.html" class="dropdown-item">Git</a>
+                                <a href="js.html" class="dropdown-item">JS</a>
+                                <a href="scrum.html" class="dropdown-item">Scrum</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                    </div>
+                </div>
             </div>
-          </nav> 
+        </nav>
         <header><br>     
             <h1>
                 <font face="Courier New"><img width="50" src="https://cdn-icons-png.flaticon.com/512/136/136530.png" />

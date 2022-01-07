@@ -11,55 +11,56 @@
         <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
         <meta charset="UTF-8">
   
-        <title>Re-Aprendendo</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
+        <title>Home</title>
 
     </head>
     <body> 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <a class="navbar-brand" href="index.html">
-                <img src="https://cdn.pixabay.com/photo/2015/06/11/00/55/book-805405_960_720.png" width="30px">&nbsp
-                Home
-            </a>
-        
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Aprendendo ++
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="git.html">Git</a>
-                            <a class="dropdown-item" href="js.html">JS</a>
-                            <a class="dropdown-item" href="scrum.html">Scrum</a>
-                        </div>
-                    </li>
-                </ul>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">
+                  <img src="https://cdn.pixabay.com/photo/2015/06/11/00/55/book-805405_960_720.png" width="30px">&nbsp
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-            </div>
-          </nav> 
-
-            <header><br>
-                <h1><font face="Courier New"> Aprendi hj </font></h1>
-                 
-                <div class="imagem">                                        
-                    <img width="900" src="https://tuataras.net/wp-content/uploads/Persona-programando.png" />
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Aprendendo ++</a>
+                            <div class="dropdown-menu">
+                                <a href="git.html" class="dropdown-item">Git</a>
+                                <a href="js.html" class="dropdown-item">JS</a>
+                                <a href="scrum.html" class="dropdown-item">Scrum</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                    </div>
                 </div>
-            </header>
-            
-            <br>
-            <p class="descricao">
-                Esta é uma pagina simples destinada a rascunho e anotações sobre 
-                conteúdos aprendidos diariamente <br><br>
-
-                "Toda forma de saber nasce de um não saber".
-            </p>
-      
+            </div>
         </nav>
+
+        <header><br>
+            <h1><font face="Courier New"> Aprendi hj </font></h1>
+                
+            <div class="imagem">                                        
+                <img width="900" src="https://tuataras.net/wp-content/uploads/Persona-programando.png" />
+            </div>
+        </header>
         
+        <br>
+        <p class="descricao">
+            Esta é uma pagina simples destinada a rascunho e anotações sobre 
+            conteúdos aprendidos diariamente <br><br>
+
+            "Toda forma de saber nasce de um não saber".
+        </p>
+      
         <footer id="footer" class="footer-1">
             <div class="main-footer widgets-dark typo-light">
                 <div class="container">
@@ -97,12 +98,12 @@
             </div>
         </footer>
     </body>
-  
-    </script>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
 </html>
