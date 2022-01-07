@@ -15,7 +15,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
 
   
-        <title>Git</title>
+        <title>Javascript</title>
     </head>
     <body> 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -44,121 +44,129 @@
           </nav> 
         <header><br>     
             <h1>
-                <font face="Courier New"><img width="50" src="https://w7.pngwing.com/pngs/743/345/png-transparent-bash-git-computer-icons-installation-command-line-interface-github-text-logo-windows-thumbnail.png" />
-                    Git
+                <font face="Courier New"><img width="50" src="https://cdn-icons-png.flaticon.com/512/136/136530.png" />
+                    Javascript
                 </font>
             </h1>                 
         </header>
        
         <div class="container">
             <hr>
-            <p>
-                O Git é capaz orgazinar e re-organizar arquivos e diretorios, 
-                <strong>versionando</strong> suas alterações em ramificações 
-                sendo manipuladas por varias pessoas.
-                O Git utiliza <strong>Hash</strong> SHA1 para identificar qualquer 
-                mudança feita em um arquivo 
-            </p>
-            <h2>Objetos fundamentais do Git</h2>
+            <p>Detalhes que não sabia sobre o javascript</p>
             <ul>
-                <li>
-                    <strong>Blob</strong> - Armazena um conjunto de caracteres de 
-                    40 digitos, o <strong>HASH</strong>
-                </li>
-                <li>
-                    <strong>Tree</strong>- Modelo <strong>hieraquico</strong> no
-                     qual o Git organiza seus <strong>diretorios</strong>
-                </li>
-                <li><strong>Commits</strong> - Funciona como um &#39; carimbo 
-                    temporal &#39;, ele registras as modificações feitas pelo
-                     autor
-                </li>
+                <li>Suas regras são alteradas pelo <strong>ECMAScript</strong> </li>
+                <li>É multipadagima</li>
             </ul>
-            <h2>Comandos Iniciais</h2>
+            <h2>Função autoinvocavel</h2>
+            <p>
+                É uma função auto-invocada que você declara, mesmo como anônima, 
+                e que, no momento da declaração, você pode invocá-la.
+                Com esse tipo de função é possível fugir do escopo global do 
+                browser, limitando-se apenas ao escopo local da função. Veja:
+            </p>
             <pre>
-                <code class="python" contentEditable="true">
-                    
-                    <span>//Configuração de usuario e email</span>
-                    <span>$</span> git config --global user.email <span>"email@gmail.com"</span>
-                    <span>$</span> git config --global user.name nome
+                <code>(<span><span>function</span>(<span></span>) </span>{
+    <span>console</span>.log(<span>'Será executado na hora e fugirá do escopo global'</span>)
+}) () <span>//Invocação da função</span>
 
-                    <span">//Mostra as configurações do Git</span>
-                    <span>$</span> git config --list    
-
-                    <span>//Faz o link de um repositorio local par aum remoto</span>
-                    <span>$</span> git remote add origin https:<span>//github.com/usuario/repositorio.git</span>
-                    <span>$</span> git push -u origin main
-
-                    <span>//Exibe lista de repositorios</span>
-                    <span>$</span> git remote -v
-
-                    <span>//Inicia o repositorio locla git </span>
-                    <span>$</span> git init  
-
-                    <span>//Verifica o status do repositorio</span>
-                    <span>$</span> git status
-
-                    <span>//Adiciona todas as alterações ao STAGE</span>
-                    <span>$</span> git add .
-
-                    <span>//Commita o que foi adicionado anteriormente</span>
-                    <span>$</span> git commit -m <span>"mensagem"</span>
-
-                    <span>//Envia o commit </span>
-                    <span>$</span> git push
-
-                    <span>//Baixa as ultimas alterações naquele repositorio </span>
-                    <span>$</span> git pull origin main
-             
+<span>let</span> result = (<span><span>function</span> (<span></span>) </span>{ 
+    <span>let</span> nome = <span>"Bene"</span>; 
+    <span>return</span> nome; 
+    })();
+   
+   <span>// Imediatamente gera a saída:</span>
+    result; <span>// 'Bene'</span>
                 </code>
             </pre>
-
-            <h2>Conceitos do GIT</h2>
-            <ul>
-                <li><strong>Untracked</strong> - O Git não conhece esses arquivos</li>
-                <li>
-                    <strong>Tracked</strong> - Arquivos conhecidos pelo Git
-                    <ol>
-                        <li>
-                            <strong>Unmodified</strong> - Arquivos que não foram alterados 
-                            - verifica-se pelo SHA1
-                        </li>
-                        <li><strong>Modified</strong> - Arquivos modificados</li>
-                        <li>
-                            <strong>Stage</strong> - Arquivos que possuem um &#39;
-                            estado&#39;, esse estado é o que antecede o commit, 
-                            arquivos modificados vão pro <strong>STAGE</strong> apos 
-                            serem adicionados com comando <code>$ git add</code>, 
-                            estando no <strong>STAGE</strong>, ele podem ir 
-                            pro <strong>COMMIT</strong>
-                        </li>
-                    </ol>
-                </li>
-            </ul>
-            <p>
-                Caso eliminemos arquivos <strong>Unmodified</strong>, eles irão
-                para os arquivos <strong>Untracked</strong>Apos <em>commitar</em> 
-                os arquivos, eles passam a ser <strong>Unmodified</strong>, e 
-                aguardam suas novas alterações para serem <em>commitados</em> 
-                posteriomente
-            </p>
-            <h2>O Git é um  Sistema Distribuido</h2>
-            <ul>
-                <li>
-                    <p><strong>Servidor</strong> - repositorio remoto</p>
-                </li>
-                <li>
-                    <p>
-                        <strong>Ambiente de desenvolvimento</strong> - Local onde
-                        estamos desenvolvendo 
-                    </p>
-                    <ul>
-                        <li>Diretorio de trabalho</li>
-                        <li>Area de Staging</li>
-                        <li>Repositorio Local</li>
-                    </ul>
-                </li>
-            </ul>
+                <p>
+                    Tudo que for manipulado dentro da função somente atuará no 
+                    escopo local da função, isolando-se do escopo mais abrangente.
+                </p>
+                <h2>Arguments</h2>
+                <p>
+                    O objeto <code>arguments</code>  
+                    é como um objeto Array correspondendo aos argumentos passados 
+                    para uma função. Ele é uma variável local disponível dentro de 
+                    todas as funções. Você pode referenciar os argumentos de uma 
+                    função dentro da função usando o objeto <code>arguments</code>. 
+                    Esse objeto contém um registro para cada argumento fornecido para 
+                    a função, com o índice do primeiro registro começando em 0. Por 
+                    exemplo, se são passados três argumentos para uma função, você 
+                    pode referenciá-los como a seguir: 
+                </p>
+                <pre>
+                    <code>  arguments
+    <span>[0]</span>arguments
+    <span>[1]</span>arguments
+    <span>[2]</span>arguments
+                    </code>
+                </pre>
+                <h2>Usando a Sintaxe Spread com Arguments</h2>
+                <p>
+                    Você também pode usar o método Array.from() ou o operador 
+                    spread (en-US) para converter argumentos em um Array real:
+                </p>
+                <pre>
+                    <code>
+    <span>var args</span> = Array.from(arguments);
+    <span>var args</span> = [...arguments];
+                    </code>
+                </pre>
+                <h2>Spread</h2>
+                <p>
+                    Com a Spred você consegue por exemplo passar cada elemento de 
+                    um array como paramentro em uma função, veja o exemplo:
+                </p>
+                <pre>
+                    <code>    <span><span>function</span> </span><span >sum</span>(x, y, z) {
+        <span>return</span> x + y + z;
+    }
+                    
+    const numbers = [<span>1</span>, <span>2</span>, <span>3</span>];
+    console.<span >log</span>(<span >sum</span>(...numbers));
+                    </code>
+                </pre>
+                <h2>Rest</h2>
+                <p>O contrario acontece quando utilizamos  o rest, veja:</p>
+                <pre>
+                    <code>  <span><span>function</span> <span>confereTamanho</span><span>(<span class="hljs-rest_arg">...args</span>)</span> </span>{
+    console.log(args.length);
+   }
+                
+    confereTamanho(); <span>//0</span>
+    confereTamanho(<span>1</span>, <span>2</span>); <span>//2</span>
+    confereTamanho(<span>3</span>, <span>4</span>, <span>5</span>); <span>//3</span>
+                    </code>
+                </pre>
+                <h2>For In e For Of</h2>
+                <p>
+                    Tanto <strong>for in</strong> quanto <strong>for of</strong>
+                     vão iterar em uma lista, para nos entregar valores das mesmas
+                    Porém o for in nos retorna os índices de cada elemento, já o 
+                    for of nos retorna nos elementos da lista.Isso pode ser 
+                    facilmente observado no código a seguir:
+                </p>
+                <pre>
+                    <code><span>let</span> arr = [<span>"Matheus"</span>, <span>30</span>, <span>1.78</span>];
+                
+    <span>for</span> (<span>let</span> i <span>in</span> arr) {
+    console.log(i); // <span>"0"</span>, <span>"1"</span>, <span>"2"</span>
+    }
+    
+    <span>for</span> (<span>let</span> i <span>of</span> arr) {
+    console.log(i); // Matheus, <span>30</span>, <span>1.78</span>
+    }
+                    </code>
+                </pre>
+                <h2>Switch/ Case</h2>
+                <p>Nessa estrutura as condicionais equivalem a um ===</p>
+                <h2>Arrow Function</h2>
+                <p>
+                    As arrow functions não fazem hoisting, então não tem como 
+                    chamar a função antes de declarar a mesma. O valor this sempre 
+                    será global, não irá funcionar o <strong>call, apply, bind e 
+                    arguments</strong>. 
+                </p>            
         </div>
         
         <footer id="footer" class="footer-1">

@@ -8,6 +8,10 @@ h1 {
     color: #0b246e;
 }
 
+h2 {
+    color: #0b246e;
+}
+
 .descricao {
     color: #0b246e;
     font-size: large;
@@ -19,6 +23,7 @@ div.imagem {
     flex-grow: 1;
     background-position: center 
 }
+
 
 
 /*==================== 

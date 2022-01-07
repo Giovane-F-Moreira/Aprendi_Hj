@@ -15,7 +15,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
 
   
-        <title>Git</title>
+        <title>Scrum</title>
     </head>
     <body> 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -44,8 +44,8 @@
           </nav> 
         <header><br>     
             <h1>
-                <font face="Courier New"><img width="50" src="https://w7.pngwing.com/pngs/743/345/png-transparent-bash-git-computer-icons-installation-command-line-interface-github-text-logo-windows-thumbnail.png" />
-                    Git
+                <font face="Courier New"><img width="50" src="https://cdn-icons-png.flaticon.com/512/5065/5065388.png" />
+                    Scrum 
                 </font>
             </h1>                 
         </header>
@@ -53,112 +53,113 @@
         <div class="container">
             <hr>
             <p>
-                O Git é capaz orgazinar e re-organizar arquivos e diretorios, 
-                <strong>versionando</strong> suas alterações em ramificações 
-                sendo manipuladas por varias pessoas.
-                O Git utiliza <strong>Hash</strong> SHA1 para identificar qualquer 
-                mudança feita em um arquivo 
+                O Scrum é uma estrutura que ajuda as equipes a trabalharem juntas. 
+                Semelhante a uma equipe de rugby (de onde vem o nome) treinando 
+                para o grande jogo, o Scrum estimula as equipes a aprenderem com 
+                as experiências, a se organizarem enquanto resolvem um problema e a
+                 refletirem sobre os êxitos e fracassos para melhorarem sempre.
             </p>
-            <h2>Objetos fundamentais do Git</h2>
+            <h2>Pilares do scrum</h2>
+            <ol>
+                <li>Transparência. </li>
+                <li>Inspeção. </li>
+                <li>Adaptação</li>
+            </ol>
+            <h2>Responsaveis:</h2>
             <ul>
-                <li>
-                    <strong>Blob</strong> - Armazena um conjunto de caracteres de 
-                    40 digitos, o <strong>HASH</strong>
-                </li>
-                <li>
-                    <strong>Tree</strong>- Modelo <strong>hieraquico</strong> no
-                     qual o Git organiza seus <strong>diretorios</strong>
-                </li>
-                <li><strong>Commits</strong> - Funciona como um &#39; carimbo 
-                    temporal &#39;, ele registras as modificações feitas pelo
-                     autor
-                </li>
-            </ul>
-            <h2>Comandos Iniciais</h2>
-            <pre>
-                <code class="python" contentEditable="true">
-                    
-                    <span>//Configuração de usuario e email</span>
-                    <span>$</span> git config --global user.email <span>"email@gmail.com"</span>
-                    <span>$</span> git config --global user.name nome
-
-                    <span">//Mostra as configurações do Git</span>
-                    <span>$</span> git config --list    
-
-                    <span>//Faz o link de um repositorio local par aum remoto</span>
-                    <span>$</span> git remote add origin https:<span>//github.com/usuario/repositorio.git</span>
-                    <span>$</span> git push -u origin main
-
-                    <span>//Exibe lista de repositorios</span>
-                    <span>$</span> git remote -v
-
-                    <span>//Inicia o repositorio locla git </span>
-                    <span>$</span> git init  
-
-                    <span>//Verifica o status do repositorio</span>
-                    <span>$</span> git status
-
-                    <span>//Adiciona todas as alterações ao STAGE</span>
-                    <span>$</span> git add .
-
-                    <span>//Commita o que foi adicionado anteriormente</span>
-                    <span>$</span> git commit -m <span>"mensagem"</span>
-
-                    <span>//Envia o commit </span>
-                    <span>$</span> git push
-
-                    <span>//Baixa as ultimas alterações naquele repositorio </span>
-                    <span>$</span> git pull origin main
-             
-                </code>
-            </pre>
-
-            <h2>Conceitos do GIT</h2>
-            <ul>
-                <li><strong>Untracked</strong> - O Git não conhece esses arquivos</li>
-                <li>
-                    <strong>Tracked</strong> - Arquivos conhecidos pelo Git
-                    <ol>
-                        <li>
-                            <strong>Unmodified</strong> - Arquivos que não foram alterados 
-                            - verifica-se pelo SHA1
-                        </li>
-                        <li><strong>Modified</strong> - Arquivos modificados</li>
-                        <li>
-                            <strong>Stage</strong> - Arquivos que possuem um &#39;
-                            estado&#39;, esse estado é o que antecede o commit, 
-                            arquivos modificados vão pro <strong>STAGE</strong> apos 
-                            serem adicionados com comando <code>$ git add</code>, 
-                            estando no <strong>STAGE</strong>, ele podem ir 
-                            pro <strong>COMMIT</strong>
-                        </li>
-                    </ol>
-                </li>
-            </ul>
-            <p>
-                Caso eliminemos arquivos <strong>Unmodified</strong>, eles irão
-                para os arquivos <strong>Untracked</strong>Apos <em>commitar</em> 
-                os arquivos, eles passam a ser <strong>Unmodified</strong>, e 
-                aguardam suas novas alterações para serem <em>commitados</em> 
-                posteriomente
-            </p>
-            <h2>O Git é um  Sistema Distribuido</h2>
-            <ul>
-                <li>
-                    <p><strong>Servidor</strong> - repositorio remoto</p>
-                </li>
-                <li>
-                    <p>
-                        <strong>Ambiente de desenvolvimento</strong> - Local onde
-                        estamos desenvolvendo 
-                    </p>
+                <li>PO - Product Owner
                     <ul>
-                        <li>Diretorio de trabalho</li>
-                        <li>Area de Staging</li>
-                        <li>Repositorio Local</li>
+                        <li>Repesenta a area de negocios</li>
+                    </ul>
+                </li>
+                <li>SM - Scrum Master 
+                    <ul>
+                        <li>
+                            Garante o uso correto do Scrum, age como facilitador, ele nao 
+                            delega as ativiades, não é gerente de projetos
+                        </li>
+                    </ul>
+                </li>
+                <li>DEV - Time de desenvolvimento 
+                    <ul>
+                        <li>
+                            Equipe multidisciplinar com habilidades suficientes para 
+                            desenvolver, testar e criar o sistema
+                        </li>
                     </ul>
                 </li>
             </ul>
+            <h2>Time Box</h2>
+            <p>
+                É um tempo maximo para uma cerimonia ou para uma 
+                <strong>SPRINT</strong> 
+            </p>
+            <h2>Sprint</h2>
+            <p>
+                São no maximo 30 dias de desenvolvimento, tendo planejamento, 
+                reuniões diarias <strong>DAILY</strong>, revisões e retrospectiva
+            </p>
+            <h2>Daily</h2>
+            <p>
+                Reuniões diarias rápidas, no máximo 15 minutos, com foco em 3 
+                perguntas, oq fez no dia anterior, o vai fazer hoje e quais 
+                impedimentos
+            </p>
+            <h2>Acompanhamento</h2>
+            <p>
+                O acompanhamento é feito observando as tarefas a fazer, as que 
+                estão sendo feitas e as que ja foram feitas
+            </p>
+            <h2>Product Backlog</h2>
+            <p>
+                Itens refinados do planejamento, as &#39;estorias&#39; que serão 
+                apresentadas ao time, que serão discutidas tendo em vista o que 
+                sera levado para as SPRINTS
+            </p>
+            <h2>Sprint Backlog</h2>
+            <p>
+                Sera definido as atividades atraves das &#39;estorias&#39;, 
+                definindo prioridades, e o objetico principal da SPRINT
+            </p>
+            <h2>Release</h2>
+            <p>
+                Toda vez que o produto é criado ou modificado, geramos uma release, 
+                que é uma versão daquele produto
+            </p>
+            <h2>Estória, Tarefas e Epicos</h2>
+            <p>
+                Estoria = é um conjunto de tarefas
+                Epicos = é um conjunto de estorias
+                Tarefa = é um conjunto de atividades que os Devs fazem para entregar a estória
+            </p>
+            <p>Épico</p>
+            <p>Estória</p>
+            <p>Tarefa</p>
+            <p>   
+                Imagine um projeto que o objetivo é construir uma bicicleta
+                Quando todos os epicos estiverem concluidos, o projeto estará pronto
+                O projeto bibleta e um conjuntos dos <strong>epicos</strong>( quadro, garfo, selim, rodas, freio e tração)
+                <br> O <strong>epico</strong> é um objetivo macro a ser cumprido 
+                (guidão, amortecedores, garfo)
+                OBS: O guidão é uma estoria do <strong>epico</strong> gargo, assim como 
+                pedal é uma estoria do sistema de tração
+            </p>
+            <p>
+                Para realizar a <strong>estoria</strong> garfo, temos que realizar 
+                as <strong>tarefas</strong> (montar guidão, montar garfo, montar 
+                garfo no quadro, montar roda no garfo .... )
+            </p>
+            <h2>Critério de aceite</h2>
+            <p> 
+                É uma lista de critérios para que a estória atenda aos requisitos 
+                do cliente
+            </p>
+            <h2>Planning Poker</h2>
+            <p>
+                É uma atividade de mesuração do esforço e complexidade das terfas 
+                ou estórias
+            </p>
+            
         </div>
         
         <footer id="footer" class="footer-1">
