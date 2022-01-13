@@ -123,3 +123,4 @@ Veja abaixo a diferança entre o Var, Let e Const
 | Reatribuir | SIM             | NÃO   | SIM   |
 | Hoisting   | SIM             | NÃO   | NÃO   |
 
+ 
