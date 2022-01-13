@@ -101,3 +101,25 @@ Nessa estrutura as condicionais equivalem a um ===
 
 As arrow functions não fazem hoisting, então não tem como chamar a função antes de declarar a mesma
 O valor this sempre será global, não irá funcionar o **call, apply, bind e arguments**. 
+
+## Hoisting
+
+O hoisting ocorre quando a uma atribuição sem antes ter uma declaração de variavel, isso só ocorre quando utilizamos **VAR**, no **LET** e no **CONST** nao é possivel fazer **hoisting**
+
+```
+number = 1 
+
+var number = 3
+```
+
+## Escopos
+
+Veja abaixo a diferança entre o Var, Let e Const
+
+|            | VAR             | CONST | LET   |
+| ---------- | --------------- | ----- | ----- |
+| Escopo     | Global ou Local | Bloco | Bloco |
+| Redeclarar | SIM             | NÃO   | NÃO   |
+| Reatribuir | SIM             | NÃO   | SIM   |
+| Hoisting   | SIM             | NÃO   | NÃO   |
+
