@@ -123,4 +123,75 @@ Veja abaixo a diferança entre o Var, Let e Const
 | Reatribuir | SIM             | NÃO   | SIM   |
 | Hoisting   | SIM             | NÃO   | NÃO   |
 
- 
+##  Promises
+
+É um dado que no momento que recebido, não sabemos o que pode acontecer, pois nãoo temos o resultado ainda, mas um tempo depois saberemos se o resultado apontou que o dado foi resolvido ou rejeitado. 
+
+​				               	RESOLVED
+PENDING		    ------>  .then( ) -------->             PENDING
+ Promise ----------|									 |------->  Promise
+​						    ------>  .catch( ) ------->
+​									 REJECTED
+
+### Estados da promise
+
+1. Pending -  Pendente
+2. Fulfilled -   Completada
+3. Rejected - Rejeitada
+
+### Estrutura de uma promise
+
+```
+Const myPromise = new Promise((resolve, reject) => {
+	window.setTimeout(() => {
+		resolve(console.log('Resolvida!'));
+	}, 2000);
+});
+```
+
+## Async / await 
+
+Funções assincronas precisam dessas duas palavras, async e await.
+Definindo uma função como `async`, podemos utilizar a palavra-chave `await` antes de qualquer expressão que retorne uma promessa. Dessa forma, a execução da função externa (a função `async`) será pausada até que a Promise seja resolvida.
+
+```
+async function getUser(userId) { 
+	let response = await fetch(`https://api.com/api/user/${userId}`); 
+	let userData = await response.json(); 
+	return userData.name; // não é necessário o await no return 
+}
+```
+
+## Fetch
+
+A API fetch provê ao navegador uma interface para a execução de requisições HTTP através de Promises.
+Antes do Fetch as requisições HTTP eram feitas através do XMLHttpRequest.	Neste exemplo faremos uma comparação da mesma requisição sendo feita em ambas APIs:
+
+```
+// requisição com o XMLHttpRequest
+  const request = new XMLHttpRequest()
+
+  request.open('GET', 'http://exemplo.com/usuario')
+
+  request.onload = function () {
+    console.log(JSON.parse(this.responseText))
+  }
+
+  request.onerror = function () {
+    console.log('erro ao executar a requisição')
+  }
+
+  request.send()
+```
+
+Perceba que na **linha 1** é instanciado o XMLHttpRequest a uma constante, e em seguida (**linha 2**) definimos o método e URL da requisição, para depois declarar dois callbacks: onload e onerror para ação de sucesso e erro, respectivamente. Ao final executamos a requisição com o send().
+
+Todo esse processo torna a requisição complexa de ser feita, sem contar que não foi definido sequer um header no exemplo, por isso foi criado o Fetch, tornando a requisição HTTP mais simples, como podemos ver no exemplo reescrito.
+
+```
+// requisição com o Fetch
+
+  fetch('http://exemplo.com/usuario')
+    .then(T => T.json())
+    .then(console.log)
+```
